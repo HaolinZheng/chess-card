@@ -3,6 +3,10 @@ using System;
 
 public partial class CardClickedState : CardState
 {
+    public override void _Ready()
+    {
+        state = State.Clicked;
+    }
     public override void Enter()
     {
         card_ui.color.Color = Color.FromHsv(30f/360f, 1f, 1f);

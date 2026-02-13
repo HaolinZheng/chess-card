@@ -3,6 +3,10 @@ using System;
 
 public partial class CardDraggingState : CardState
 {
+    public override void _Ready()
+    {
+        state = State.Dragging;
+    }
     public override void Enter()
     {
         if (GetTree().GetFirstNodeInGroup("ui_layer") is CanvasLayer ui_layer)

@@ -93,3 +93,5 @@ script = ExtResource("8_y16af")
 [connection signal="gui_input" from="." to="." method="_GuiInput"]
 [connection signal="mouse_entered" from="." to="." method="_MouseEntered"]
 [connection signal="mouse_exited" from="." to="." method="_MouseExited"]
+[connection signal="area_entered" from="DropPointDetector" to="." method="_on_drop_point_detector_area_entered"]
+[connection signal="area_exited" from="DropPointDetector" to="." method="_on_drop_point_detector_area_exited"]
